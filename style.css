@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #d32f2f; /* Red for urgency/justice */
+    --text-color: #212121;
+    --bg-color: #fafafa;
+    --card-bg: #ffffff;
+    --accent-color: #388e3c; /* Green for climate/Palestine flag */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--card-bg);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #eee;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: #ddd;
+}
+
+nav a.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+}
+
+h1 { color: var(--primary-color); font-size: 2.5rem; margin-bottom: 0.5rem; }
+h2 { color: var(--text-color); font-size: 1.5rem; margin-top: 0; font-weight: 300; }
+h3 { color: var(--primary-color); border-left: 4px solid var(--primary-color); padding-left: 1rem; margin-top: 2.5rem; }
+
+.meta-tags {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+    color: #555;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-left: 8px solid var(--accent-color);
+    background: #f1f8e9;
+}
+
+[dir="rtl"] body {
+    text-align: right;
+}
+
+[dir="rtl"] blockquote {
+    border-left: none;
+    border-right: 8px solid var(--accent-color);
+}
+
+[dir="rtl"] h3 {
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #212121;
+    color: white;
+    margin-top: 3rem;
+}
+
+footer a { color: #ffeb3b; }
+
+.translation-call {
+    background: #fff9c4;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    text-align: center;
+    border: 1px dashed #fbc02d;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    main { margin: 1rem auto; }
+}
