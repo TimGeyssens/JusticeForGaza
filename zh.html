@@ -7,25 +7,80 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        body { font-family: "Noto Sans SC", sans-serif; }
         body { font-family: 'Noto Sans SC', sans-serif, 'Inter'; }
     </style>
 </head>
 <body>
     <header>
+        <img src="https://s.france24.com/media/display/c5d994bc-8632-11f0-9045-005056bf30b7/w:1280/p:16x9/000-72WT8F3.jpg" alt="Justice for Gaza" class="header-image">
         <h1>📢 未经过滤的真理宣言</h1>
         <h2>为何孩子的“疯狂”是病态世界唯一的希望</h2>
     </header>
 
-    <nav>
-        <a href="index.html">Nederlands</a>
-        <a href="en.html">English</a>
-        <a href="fr.html">Français</a>
-        <a href="it.html">Italiano</a>
-        <a href="de.html">Deutsch</a>
-        <a href="es.html">Español</a>
-        <a href="pt.html">Português</a>
-        <a href="ar.html">العربية</a>
-        <a href="zh.html" class="active">中文</a>
+                <nav class="navbar">
+        <div class="nav-links">
+            <a href="zh.html" class="nav-item active">宣言</a>
+            <div class="nav-dropdown">
+                <div class="nav-item">危机</div>
+                <div class="dropdown-content">
+                    <a href="history-zh.html">历史</a>
+                    <a href="mental-health-zh.html">心理健康</a>
+                    <a href="wealth-gap-zh.html">贫富差距</a>
+                    <a href="arms-trade-zh.html">武器贸易</a>
+                    <a href="climate-justice-zh.html">气候正义</a>
+                    <a href="water-apartheid-zh.html">水资源隔离</a>
+                    <a href="genocide-convention-zh.html">防止及惩治灭绝种族罪公约</a>
+                    <a href="waste-crisis-zh.html">垃圾危机</a>
+                    <a href="money-evolution-zh.html">货币的演变</a>
+                    <a href="tax-avoidance-zh.html">避税</a>
+                    <a href="democracy-illusion-zh.html">民主的错觉</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <div class="nav-item">人文视角</div>
+                <div class="dropdown-content">
+                    <a href="neurodiversity-zh.html">神经多样性</a>
+                    <a href="survival-mode-zh.html">生存模式</a>
+                    <a href="the-mindset-zh.html">思维模式</a>
+                    <a href="hero-myth-zh.html">英雄神话</a>
+                    <a href="propaganda-zh.html">信息战</a>
+                    <a href="tech-surveillance-zh.html">科技与监视</a>
+                    <a href="bullshit-jobs-zh.html">狗屁工作</a>
+                    <a href="human-nature-zh.html">人性</a>
+                    <a href="education-factory-zh.html">教育工厂</a>
+                    <a href="divide-conquer-zh.html">分而治之</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <div class="nav-item">团结</div>
+                <div class="dropdown-content">
+                    <a href="take-action-zh.html">采取行动</a>
+                    <a href="radical-community-zh.html">激进社区</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <div class="nav-item">资源</div>
+                <div class="dropdown-content">
+                    <a href="glossary-zh.html">术语表</a>
+                    <a href="references-zh.html">参考文献</a>
+                    <a href="further-reading-zh.html">进一步阅读</a>
+                </div>
+            </div>
+        </div>
+        <div class="lang-switcher">
+            <select onchange="window.location.href=this.value">
+                <option value="index.html">English</option>
+                <option value="nl.html">Nederlands</option>
+                <option value="fr.html">Français</option>
+                <option value="it.html">Italiano</option>
+                <option value="de.html">Deutsch</option>
+                <option value="es.html">Español</option>
+                <option value="pt.html">Português</option>
+                <option value="ar.html">العربية</option>
+                <option value="zh.html" selected>中文</option>
+            </select>
+        </div>
     </nav>
 
     <main>
@@ -76,13 +131,13 @@
             #FreePalestine #GretaThunberg #EndTheGenocide #NeurodiversityResistance #1PercentMustFall #CrazyPeopleWillSaveTheWorld #ClimateJustice #JusticeForGaza
         </div>
 
-        <div class="translation-call">
-            <p>想帮忙翻译吗？ <a href="https://github.com/TimGeyssens/JusticeForGaza">在 GitHub 上贡献</a>。</p>
-        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Justice For Gaza Manifesto | <a href="https://github.com/TimGeyssens/JusticeForGaza">源代码</a></p>
+        <footer>
+            <div class="translation-call">
+        <p>想帮助将这些资源翻译成更多语言吗？ <a href="https://github.com/TimGeyssens/JusticeForGaza">在 GitHub 上贡献</a>.</p>
+    </div>
+<p>&copy; 2026 Justice For Gaza Manifesto | <a href="republish-zh.html">关于与转载</a> | <a href="https://github.com/TimGeyssens/JusticeForGaza">源代码</a></p>
     </footer>
 </body>
 </html>

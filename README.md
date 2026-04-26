@@ -5,8 +5,8 @@ This repository hosts the **Manifesto of the Unfiltered Truth**, a call for just
 ## 🌍 Live Website
 The manifesto is available in multiple languages, optimized for GitHub Pages:
 
-- **[Nederlands (Dutch)](./index.html)**
-- **[English](./en.html)**
+- **[English (Default)](./index.html)**
+- **[Nederlands (Dutch)](./nl.html)**
 - **[Français (French)](./fr.html)**
 - **[Italiano (Italian)](./it.html)**
 - **[Deutsch (German)](./de.html)**
