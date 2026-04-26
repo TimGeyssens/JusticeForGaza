@@ -74,7 +74,27 @@ header h2 {
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--border-width) solid #000;
-    min-height: 70px;
+    height: 70px;
+}
+
+/* Hamburger Toggle (Hidden) */
+.nav-toggle {
+    display: none;
+}
+
+/* Hamburger Icon / Label */
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    padding: 0 1.5rem;
+    height: 100%;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-right: var(--border-width) solid #000;
 }
 
 .nav-links {
@@ -118,7 +138,7 @@ header h2 {
     z-index: 1001;
     border: var(--border-width) solid #000;
     top: 100%;
-    left: -4px; /* Offset for border alignment */
+    left: -4px;
     box-shadow: var(--hard-shadow);
 }
 
@@ -138,7 +158,6 @@ header h2 {
     color: var(--accent-color);
 }
 
-/* Ensure the parent nav-item stays active when a child is active */
 .nav-dropdown:hover .nav-item, .nav-dropdown.active .nav-item {
     background: var(--accent-color);
     color: #fff;
@@ -232,7 +251,6 @@ blockquote {
     text-transform: uppercase;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 4rem 1rem;
@@ -270,18 +288,28 @@ footer a { color: var(--accent-color); font-weight: bold; }
     border: 0;
 }
 
-/* --- Mobile / Tablet Fixes --- */
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        align-items: stretch;
+/* --- Mobile / Tablet Overhaul with Hamburger --- */
+@media (max-width: 1024px) {
+    .nav-toggle-label {
+        display: flex;
     }
 
     .nav-links {
-        flex-direction: column;
+        display: none; /* Hidden by default on mobile */
+        position: absolute;
+        top: 70px;
+        left: 0;
         width: 100%;
-        align-items: stretch;
+        background: #fff;
+        flex-direction: column;
+        height: auto;
+        border-bottom: var(--border-width) solid #000;
+        box-shadow: var(--hard-shadow);
+    }
+
+    /* Show menu when checkbox is checked */
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
     }
 
     .nav-dropdown {
@@ -290,15 +318,15 @@ footer a { color: var(--accent-color); font-weight: bold; }
     }
 
     .nav-item {
-        padding: 1rem;
+        padding: 1.5rem;
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.1rem;
         justify-content: space-between;
     }
 
-    /* On mobile, we use :focus-within to show sub-menu */
-    .nav-dropdown:focus-within .dropdown-content,
-    .nav-dropdown:hover .dropdown-content {
+    /* Keep dropdowns expanded or toggleable in mobile menu */
+    .nav-dropdown:hover .dropdown-content,
+    .nav-dropdown:focus-within .dropdown-content {
         display: block;
         position: static;
         box-shadow: none;
@@ -310,15 +338,20 @@ footer a { color: var(--accent-color); font-weight: bold; }
     }
 
     .dropdown-content a {
-        padding-left: 2rem;
+        padding-left: 3rem;
         border-bottom: 1px solid #ddd;
     }
 
+    .navbar {
+        justify-content: space-between;
+    }
+
     .lang-switcher {
-        padding: 1.5rem;
-        border-top: 2px solid #000;
-        background: #eee;
-        justify-content: center;
+        border-left: var(--border-width) solid #000;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
     }
 
     main {
@@ -326,15 +359,14 @@ footer a { color: var(--accent-color); font-weight: bold; }
         padding: 1.5rem;
         border-width: 3px;
     }
-
-    h3 { font-size: 1.5rem; }
-    blockquote { font-size: 1.2rem; padding: 1.5rem; }
 }
 
 [dir="rtl"] .dropdown-content { left: auto; right: -4px; text-align: right; }
 [dir="rtl"] .nav-dropdown { border-right: none; border-left: var(--border-width) solid #000; }
 [dir="rtl"] .nav-item { flex-direction: row-reverse; }
-[dir="rtl"] .dropdown-content a { padding-left: 1rem; padding-right: 2rem; }
-@media (max-width: 900px) {
+[dir="rtl"] .dropdown-content a { padding-left: 1rem; padding-right: 3rem; }
+@media (max-width: 1024px) {
     [dir="rtl"] .nav-dropdown { border-left: none; }
+    [dir="rtl"] .nav-toggle-label { border-right: none; border-left: var(--border-width) solid #000; }
+    [dir="rtl"] .lang-switcher { border-left: none; border-right: var(--border-width) solid #000; margin-left: 0; margin-right: auto; }
 }
