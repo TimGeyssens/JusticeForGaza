@@ -256,6 +256,18 @@ footer {
     border-top: var(--border-width) solid #000;
 }
 
+main a {
+    color: #009739; /* Palestine Green */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+main a:hover {
+    background-color: #009739;
+    color: #fff;
+}
+
 footer a { color: var(--accent-color); font-weight: bold; }
 
 .translation-call {
