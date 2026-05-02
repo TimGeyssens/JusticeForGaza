@@ -312,8 +312,11 @@ footer a { color: var(--accent-color); font-weight: bold; }
         background: #fff;
         flex-direction: column;
         height: auto;
+        max-height: calc(100vh - 70px); /* Limit height to viewport */
+        overflow-y: auto; /* Allow vertical scrolling */
         border-bottom: var(--border-width) solid #000;
         box-shadow: var(--hard-shadow);
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-toggle:checked ~ .nav-links {
