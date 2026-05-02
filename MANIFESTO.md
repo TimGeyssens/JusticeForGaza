@@ -30,4 +30,4 @@ Wie de wereld ziet zoals Greta, kan niet wegkijken van de gruwelen die door de s
 
 Wij weigeren nog langer te buigen voor een systeem dat winst boven leven stelt. Wij eisen een einde aan de leugens. Wij eisen een toekomst voor álle kinderen — van Stockholm tot Gaza.
 
-#FreePalestine #GretaThunberg #EndTheGenocide #NeurodiversityResistance #1PercentMustFall #CrazyPeopleWillSaveTheWorld #ClimateJustice #JusticeForGaza
+#FreePalestine #GretaThunberg #EndTheGenocide #NeurodiversityResistance #1PercentMustFall #ClimateJustice #JusticeForGaza

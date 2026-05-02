@@ -29,4 +29,4 @@ We want this message to reach as many people as possible. To add a new language:
 The project uses a simple, responsive CSS file (`style.css`) to maintain a consistent and impactful look across all languages. The stylesheet includes support for Right-to-Left (RTL) languages like Arabic and CJK fonts for Chinese.
 
 ## ✊ Hashtags
-#FreePalestine #GretaThunberg #EndTheGenocide #NeurodiversityResistance #1PercentMustFall #CrazyPeopleWillSaveTheWorld #ClimateJustice #JusticeForGaza
+#FreePalestine #GretaThunberg #EndTheGenocide #NeurodiversityResistance #1PercentMustFall #ClimateJustice #JusticeForGaza
